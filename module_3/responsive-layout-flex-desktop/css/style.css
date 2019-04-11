@@ -1,0 +1,200 @@
+/****************************
+
+MAIN MEDIA SCREEN STYLES
+
+*****************************/
+@media screen {
+
+	/* GENERAL */
+	* {margin: 0;padding: 0;}
+	body {background: #edeae3; font: 100%/1.5 sans-serif; color: #383838;}
+	a {text-decoration: none;}
+	h3 {margin: 0 0 10px 0;}
+
+	/* I ADDED THE FLEX CONTAINER CLASS */
+	/* CLASSES*/
+	.flexcontainer {display: flex; display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex;}
+
+	/* GROUPED */
+	header, main, article, section, aside {display: block;}
+	h3, a {color: #9f443b;}
+	main, #sidebar aside, section article, #contact-form {background: #fff; padding: 20px;}
+
+	/* HEADER */
+	header {margin-bottom: 10px;} /* <-- CHANGED THE MARGIN BOTTOM TO 10PX FROM 30PX  */
+	header #headings {padding: 0 0 0 10px;}
+	header h1 {text-transform: uppercase;}
+	header h2 {font-weight: normal;}
+	
+	/* BANNER */
+	#banner {padding: 20px; line-height: 1.4; border: 1px solid #383838; border-width: 1px 0 1px 0; margin-bottom: 30px;}
+	#banner p {color: blue;}
+
+	/* MAIN */
+	main p {margin-bottom: 16px;}
+
+	/* FORM */
+	#contact-form {padding: 5px 10px}
+	#contact-form label, #contact-form input[type='submit'] {display: block;}
+	#contact-form input[type='text'], textarea {margin: 0 0 10px 0; background: #EEE}
+	#contact-form input[type='text'], textarea {padding: 5px; font-size: 1.1em; border-radius: 5px; border: none;}
+	#contact-form textarea {height: 150px;}
+	#contact-form input[type="submit"] {font-size: 1em} /* NOTE: MADE THE FONT A LITTLE BIGGER BUT WILL NOT INCREASE ANY MORE REGARDLESS OF WHAT IS SET AS THE FONT SIZE */
+
+	/* SECTION */
+	section h2 {margin: 10px 0 0 10px;}
+	section article:last-child{margin-right: 0;}
+	section article h3{font-size: 1.3em}
+}
+
+/****************************
+
+COMBINED SCREEN VIEWS
+
+*****************************/
+
+/* I CREATED THIS MEDIA QUERY TO COMBINE TABLET LANDSCAPE AND DESKTOP AS THEY WILL BE USING THE FOLLOWING COMMON STYLES */
+@media screen and (min-width: 992px){
+       
+	/* TABLET LANDSCAPE DESKTOP COMBINED GROUPED */
+	main, section, #sidebar {margin: 0 10px}
+
+	/* TABLET LANDSCAPE DESKTOP COMBINED WRAPPER */
+	#wrapper {position: relative;} 
+
+    /* TABLET LANDSCAPE DESKTOP COMBINED HEADER */
+    header {position: relative; height: 100px;}
+    header nav {position: absolute; top: 20px; right: 20px;}
+
+    /* TABLET LANDSCAPE DESKTOP COMBINED #SIDEBAR */
+	#sidebar {width: 36%; position: absolute; top: 222px; right: 0;}
+
+	/* TABLET LANDSCAPE DESKTOP COMBINED MAIN */
+	main {width: 57%;} 
+
+	/* TABLET LANDSCAPE DESKTOP COMBINED ARTICLES */
+	section {overflow: auto; margin: 0;}/* <-- OVERWROTE THE MARGIN SO THE SECTION WAS NOT 10PX TO THE RIGHT */
+	section h2 {margin: 10px 0 0 0;}/* <-- OVERWROTE THE H2 MARGIN SO ARTICLE WAS NOT SHIFTED TO THE RIGHT */
+	
+	section article {/*width: 27%; float: left;*/ margin: 0 10px 0 0;} /* <-- THE FLOAT AND WIDTH IS NO LONGER NEEDED */
+
+	/*TABLET LANDSCAPE DESKTOP COMBINED FOOTER */
+	footer {clear: both; margin: 20px;}
+
+	/* ADDED STYLES */
+	section .flexcontainer {flex-direction: row;} /* <-- The articles will appear in a row */
+
+
+}
+
+
+/* I CREATED THIS MEDIA QUERY TO COMBINE TABLET PORTRAIT, TABLET LANDSCAPE, AND DESKTOP AS THEY WILL BE USING SOME COMMON STYLES */
+@media screen and (min-width: 768px){
+	
+	/* TABLET PORTRAIT/LANDSCAPE AND DESKTOP GROUPED */
+    main, article, #contact-form, aside {border-radius: 10px; margin: 0 0 30px 0;}
+
+	/* TABLET PORTRAIT/LANDSCAPE AND DESKTOP HEADER */
+	header {padding: 20px 0 0 0;}
+	
+	/* TABLET PORTRAIT/LANDSCAPE AND DESKTOP HEADER NAV */
+	header nav ul {overflow: auto;}
+ 	header nav ul {list-style: none;}
+ 	header nav ul li {float: left; border-right: 1px solid #938a78;}
+ 	header nav ul li:last-child {border: none}
+ 	header nav ul li a {display: block; background: #FFF; padding: 12px 24px; font-size: 1.3em; color: #FFF; background: #c1b7a7;}
+
+ 	/* TABLET PORTRAIT/LANDSCAPE AND DESKTOP ASIDE */
+ 	aside ul li {list-style: none}
+
+ 	/* TABLET PORTRAIT/LANDSCAPE AND DESKTOP FORM */
+ 	#contact-form {margin: 0 0 10px 0;}
+ 	#contact-form textarea {width: 300px;}
+
+ 	/* TABLET PORTRAIT/LANDSCAPE AND DESKTOP MAIN */
+	main img {float: right; margin: 0 0 10px 10px;}
+
+ 	/* TABLET PORTRAIT/LANDSCAPE AND DESKTOP FOOTER */
+ 	footer {position: relative; padding: 0 10px}
+ 	footer nav ul li {display: inline; margin-right: 10px;}
+ 	footer #social-media {position: absolute; top: 0px; right: 5px;}
+	footer #social-media ul li {list-style: none; float: left; margin: 0 5px 0 0;}
+	footer #social-media ul li a{background: url(../images/social-media-30.png) no-repeat; display: block; height: 25px; width: 25px;border-radius: 50%;}
+	footer #social-media ul li a[href*='linkedin']{background-position: -44px -40px;}
+	footer #social-media ul li a[href*='google']{background-position: -179px -8px;}
+	footer #social-media ul li a[href*='facebook']{background-position: -110px -8px;}
+	footer #social-media ul li a[href*='twitter']{background-position: -44px -72px;}
+	footer #social-media ul li a[href*='pinterest']{background-position: -78px -40px;}
+}
+
+/****************************
+
+INDIVIDUAL SCREEN VIEWS
+
+*****************************/
+
+@media screen and (min-width: 1200px){
+	
+	/* DESKTOP WRAPPER */
+	#wrapper {max-width: 1200px; margin: 0 auto;}
+
+	/* DESKTOP BANNER */
+	#banner p:after {content: 'This is the desktop view';}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+
+	/* TABLET LANDSCAPE BANNER */
+	#banner p:after {content: 'This is the tablet landscape view';}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    
+ 	/* TABLET PORTRAIT HEADER */
+	header nav {margin: 10px;}
+
+	/* TABLET PORTRAIT BANNER */
+	#banner p:after {content: 'This is the tablet portrait view';}
+
+	/* ADDED STYLES */
+	section .flexcontainer {flex-direction: column;} /* <-- THE ARTICLES WILL APPEAR AS A COLUMN */
+}
+
+@media screen and (max-width: 767px){
+ 	
+ 	/* PHONE GENERAL*/
+ 	p{font-size: 1.1em}
+ 	
+ 	/* PHONE GROUPED */
+ 	aside, img, footer nav, footer #social-media {display: none;}
+
+ 	/* PHONE HEADER */
+ 	header h1 {font-size: 1.8em;}
+ 	header h2 {font-size: 1.7em;}
+ 	header h3 {font-size: 1.5em;}
+
+ 	/* PHONE NAV */
+	header nav {margin: 10px 0}
+ 	header nav ul li {border-bottom: 1px solid #9f443b;}
+ 	header nav ul li:first-child{border-top: 1px solid #9f443b;}
+ 	header nav ul li a {display: block; background: #FFF; padding: 5px; font-size: 1.3em;}
+
+ 	/* PHONE BANNER */
+	#banner p:after {content: 'This is the phone view';}
+ 	
+ 	/* PHONE SECTION*/
+ 	section article {margin: 0 0 20px 0;}
+
+ 	/* PHONE FORM */
+ 	#contact-form input[type='text'], textarea {width: 98%;}
+
+ 	/* PHONE FOOTER */
+ 	footer {text-align: center;}
+
+ 	/* ADDED STYLES */
+ 	section .flexcontainer {flex-direction: column;} /* <-- THE ARTICLES WILL APPEAR AS A COLUMN */
+} 
+
+@media print {
+	nav, img, #social-media, a, #contact-form, aside {display: none;} 
+}

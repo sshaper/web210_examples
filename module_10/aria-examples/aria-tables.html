@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Aria labeled by example 1</title>
+	<meta charset="utf-8" />
+	
+	<!--below is a script which allows IE 8 to understand HTML 5 elements.-->
+	<!--[if lt IE 9]>
+    	<script>
+    		var elementsArray = ['abbr', 'article', 'aside', 'audio', 'bdi', 'canvas', 'data', 'datalist', 'details', 'figcaption', 'figure', 'footer', 'header', 'main', 'mark', 'meter', 'nav', 'output', 'progress', 'section', 'summary', 'template', 'time', 'video'];
+    		var len = elementsArray.length;
+    		for(i = 0; i < len; i++){
+    			document.createElement(elementsArray[i]);
+    		}
+    	</script>
+	<![endif]-->
+
+	<!--CSS style sheet goes here-->
+	<style>
+    table{border-spacing: 0; border-collapse: collapse;}
+    table, th, td{border: 1px solid black;}
+  </style>
+
+
+  </head>
+  <body>
+	<table>
+    <caption>Solar System Summary</caption>
+    <thead>
+      <tr>
+          <th scope="col">Planet</th>
+          <th scope="col" abbr="diameter" id="diameter">Diameter measured in earths</th>
+          <th scope="col" abbr="orbital" id="orbital">Orbital period in years</th>
+          <th scope="col">Moons</th>
+      </tr>
+    </thead>
+    <tr>
+       <th scope="row">Mercury</th>
+       <td header="diameter orbital">.38</td>
+       <td>.24</td>
+       <td>0</td>
+    </tr>
+    <tr>
+       <td>Venus</td>
+       <td>.95</td>
+       <td>.62</td>
+       <td>0</td>
+    </tr>
+    <tr>
+       <td>Jupiter</td>
+       <td>317.8</td>
+       <td>11.9</td>
+       <td>63</td>
+    </tr>
+</table>
+  
+  </body>
+</html>

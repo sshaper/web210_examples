@@ -1,0 +1,28 @@
+@media screen {
+    body {font: 100%/1.5 sans-serif;}
+    * {margin: 0; padding: 0;}
+    #wrapper {width: 1300px; margin: 0 auto; padding: 5px;}
+    h1 {color: red;}
+    p {color: blue;}
+    #wrapper div {width: 100px; height: 100px; background: blue; margin: 10px;}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	#wrapper {width: 100%; margin: 0; padding: 5px;}
+	p {color: black;}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    #wrapper {width: 100%; margin: 0; padding: 5px;}
+    p {color: aqua;}
+    .float {float: left;}
+}
+
+@media screen and (max-width: 767px){
+    #wrapper {width: 100%; margin: 0; padding: 5px;}
+    p {color: green;}
+}
+
+@media print {
+    /* ...css rules */
+}

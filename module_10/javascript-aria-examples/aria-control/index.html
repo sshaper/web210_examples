@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+  <title>Aria enhance tabbed application</title>
+  <meta charset="utf-8" />
+  
+  <!--below is a script which allows IE 8 to understand HTML 5 elements.-->
+  <!--[if lt IE 9]>
+      <script>
+        var elementsArray = ['abbr', 'article', 'aside', 'audio', 'bdi', 'canvas', 'data', 'datalist', 'details', 'figcaption', 'figure', 'footer', 'header', 'main', 'mark', 'meter', 'nav', 'output', 'progress', 'section', 'summary', 'template', 'time', 'video'];
+        var len = elementsArray.length;
+        for(i = 0; i < len; i++){
+          document.createElement(elementsArray[i]);
+        }
+      </script>
+  <![endif]-->
+
+  <!--CSS style sheet goes here-->
+  <link rel="stylesheet" href="css/main.css">
+  
+  </head>
+  <body>
+     <div id="wrapper" class="tabs hideBorder">
+      	<ul role="tablist" id="tabs">
+          <li role="presentation" class="whiteBorder">
+            <a href="#" 
+               role="tab" 
+               aria-controls="panel1" 
+               aria-selected="true" 
+               tabindex="0" 
+               id="tab1">Instructions</a>
+          </li>
+          <li role="presentation">
+            <a href="#" 
+               role="tab" 
+               aria-controls="panel2"
+               aria-selected="false" 
+               tabindex="0" 
+               id="tab2">Review terms</a>
+          </li>
+          <li role="presentation">
+            <a href="#" 
+               role="tab" 
+               aria-controls="panel3"
+               aria-selected="false" 
+               tabindex="0" 
+               id="tab3">Manage contract</a>
+          </li>
+          <li role="presentation">
+            <a href="#" 
+               role="tab" 
+               aria-controls="panel4"
+               aria-selected="false" 
+               tabindex="0" 
+               id="tab4">View history</a>
+          </li>
+        </ul>
+    <div class="clear"></div>
+    <div id="panels">
+      <div id="panel1" 
+           role="tabpanel"
+           aria-hidden="false"
+           aria-expanded="true"
+           aria-labelledby="tab1">
+        <h2 tabindex="-1">How to use this application</h2>
+        <p>This application was tested using Chromevox for Google chrome. For mouse users just click on the appropriate tab. For keyboard users use the tab key to select the appropriate tab and press the enter key. To get back to the menu press the tab key (note the tab order will start with the first one). For Chromevox users use the tab key to select the appropriate tab then press <kbd>chromvox keys+enter</kbd>.  To get back to the menu press the tab key</p>
+        <p>Press <kbd>shift+tab</kbd> to go backwards through the tab list.</p>
+        <p>Note: In Firefox for Mac you have to set your preferences (in Mac) to accept all controls.  System preferences->keyboard->(check all controls).</p>
+      </div>
+
+      <div id="panel2"
+           role="tabpanel"
+           aria-hidden="true"
+           aria-expanded="false"
+           aria-labelledby="tab2" class="hideDiv">
+        <h2 tabindex="-1">Review terms</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quae dolorum est, odit quis hic, ratione beatae laborum molestiae eius ipsa ex ipsam! Minus facere autem omnis saepe unde nihil! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quae dolorum est, odit quis hic, ratione beatae laborum molestiae eius ipsa ex ipsam! Minus facere autem omnis saepe unde nihil!</p>
+      </div>
+
+      <div id="panel3"
+           role="tabpanel"
+           aria-hidden="true"
+           aria-expanded="false"
+           aria-labelledby="tab3" class="hideDiv">
+        <h2 tabindex="-1">Manage Contract</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quae dolorum est, odit quis hic, ratione beatae laborum molestiae eius ipsa ex ipsam! Minus facere autem omnis saepe unde nihil! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quae dolorum est, odit quis hic, ratione beatae laborum molestiae eius ipsa ex ipsam! Minus facere autem omnis saepe unde nihil!</p>
+      </div>
+
+      <div id="panel4"
+           role="tabpanel"
+           aria-hidden="true"
+           aria-expanded="false"
+           aria-labelledby="tab4" class="hideDiv">
+        <h2 tabindex="-1">View history</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quae dolorum est, odit quis hic, ratione beatae laborum molestiae eius ipsa ex ipsam! Minus facere autem omnis saepe unde nihil! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut quae dolorum est, odit quis hic, ratione beatae laborum molestiae eius ipsa ex ipsam! Minus facere autem omnis saepe unde nihil!</p>
+      </div>
+    </div>
+    </div><!--end wrapper-->
+
+    <!-- <p>source <a href="http://juicystudio.com/article/aria-controls-lack-support.php">http://juicystudio.com/article/aria-controls-lack-support.php</a></p> -->
+    <script src="js/tabs.js"></script>
+  </body>
+</html>

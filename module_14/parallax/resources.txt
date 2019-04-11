@@ -1,0 +1,5 @@
+http://keithclark.co.uk/articles/pure-css-parallax-websites/
+https://davidwalsh.name/parallax/
+http://keithclark.co.uk/articles/practical-css-parallax/
+http://callmenick.com/post/simple-parallax-scrolling-effect
+https://css-tricks.com/tour-performant-responsive-css-site/

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Media Query Inheritance</title>
+	  <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!--below is a script which allows IE 8 to understand HTML 5 elements.-->
+    <!--[if lt IE 9]>
+      <script>
+        var elementsArray = ['abbr', 'article', 'aside', 'audio', 'bdi', 'canvas', 'data', 'datalist', 'details', 'figcaption', 'figure', 'footer', 'header', 'main', 'mark', 'meter', 'nav', 'output', 'progress', 'section', 'summary', 'template', 'time', 'video'];
+        var len = elementsArray.length;
+        for(i = 0; i < len; i++){
+	      document.createElement(elementsArray[i]);
+       }
+      </script>
+    <![endif]-->
+
+    <!--CSS style sheets are here-->
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Heading 1 always red</h1>
+      <p>My text color changes based upon the screen size selected, but all other values are inherited from the media screen.  The exception is the media print which is the default styles.</p>
+      <p>The following two blue boxes will only float in the tablet portrait view because that is where I added the float style.</p>
+      <div class="float"></div>
+      <div class="float"></div>
+    </div>
+  </body>
+</html>

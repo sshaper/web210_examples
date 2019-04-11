@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<title>Aria labeled by example 1</title>
+	<meta charset="utf-8" />
+	
+	<!--below is a script which allows IE 8 to understand HTML 5 elements.-->
+	<!--[if lt IE 9]>
+    	<script>
+    		var elementsArray = ['abbr', 'article', 'aside', 'audio', 'bdi', 'canvas', 'data', 'datalist', 'details', 'figcaption', 'figure', 'footer', 'header', 'main', 'mark', 'meter', 'nav', 'output', 'progress', 'section', 'summary', 'template', 'time', 'video'];
+    		var len = elementsArray.length;
+    		for(i = 0; i < len; i++){
+    			document.createElement(elementsArray[i]);
+    		}
+    	</script>
+	<![endif]-->
+
+	<!--CSS style sheet goes here-->
+	
+  </head>
+  <body>
+	<h1>Aria Described By Example</h1>
+  <p>Highlighting the button will describe the buttons function</p>
+
+  <button aria-label="Close" aria-describedby="descriptionClose" role="button" >X</button>
+  <p>...<br ><br ><br ><br ></p>
+  <div id="descriptionClose">Closing this window will discard any information entered and 
+  return you back to the main page</div>
+  
+  </body>
+</html>

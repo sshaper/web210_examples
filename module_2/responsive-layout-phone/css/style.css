@@ -1,0 +1,82 @@
+@media screen {
+
+	/*GENERAL*/
+	* {margin: 0;padding: 0;}
+	body {background: #edeae3; font: 100%/1.5 sans-serif; color: #383838;}
+	a {text-decoration: none;}
+	h3 {margin: 0 0 10px 0;}
+	
+	/*GROUPED*/
+	header, main, article, section, aside {display: block;}
+	h3, a {color: #9f443b;}
+	main, #sidebar aside, section article, #contact-form {background: #fff; padding: 20px;}
+
+	/*HEADER*/
+	header {margin-bottom: 30px;}
+	header #headings {padding: 0 0 0 10px;}
+	header h1 {text-transform: uppercase;}
+	header h2 {font-weight: normal;}
+
+	/*BANNER*/
+	#banner {padding: 20px; line-height: 1.4; border: 1px solid #383838; border-width: 1px 0 1px 0; margin-bottom: 30px;}
+	#banner p {color: blue;}
+
+	/*MAIN*/
+	main p {margin-bottom: 16px;}
+
+	/*FORM*/
+	#contact-form {padding: 5px 10px}
+	#contact-form label, #contact-form input[type='submit'] {display: block;}
+	#contact-form input[type='text'], textarea {margin: 0 0 10px 0; background: #EEE}
+	#contact-form input[type='text'], textarea {padding: 5px; font-size: 1.1em; border-radius: 5px; border: none;}
+	#contact-form textarea {height: 150px;}
+	#contact-form input[type="submit"] {font-size: 1em} /*NOTE: MAKE THE FONT A LITTLE BIGGER BUT WILL NOT INCREASE ANY MORE REGARDLESS OF WHAT IS SET AS THE FONT SIZE*/
+
+	/*SECTION*/
+	main h2 {margin: 10px 0 0 10px;}
+	section article:last-child{margin-right: 0;}
+	section article h3{font-size: 1.3em}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    /* ...not used in phone */
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    /* ...css rules go here */
+}
+
+@media screen and (max-width: 767px){
+ 	/* PHONE GENERAL*/
+ 	p{font-size: 1.1em}
+ 	
+ 	/* PHONE GROUPED */
+ 	aside, img, footer nav, footer #social-media {display: none;}
+
+ 	/* PHONE HEADER */
+ 	header h1 {font-size: 1.8em;}
+ 	header h2 {font-size: 1.7em;}
+ 	header h3 {font-size: 1.5em;}
+
+ 	/* PHONE NAV */
+ 	header nav {margin: 10px 0}
+ 	header nav ul li {border-bottom: 1px solid #9f443b;}
+ 	header nav ul li:first-child{border-top: 1px solid #9f443b;}
+ 	header nav ul li a {display: block; background: #FFF; padding: 5px; font-size: 1.3em;}
+
+ 	 /* PHONE BANNER */
+	#banner p:after {content: 'This is the phone view';}
+ 	
+ 	/* PHONE SECTION*/
+ 	section article {margin: 0 0 20px 0;}
+
+ 	/* PHONE FORM */
+ 	#contact-form input[type='text'], textarea {width: 98%;}
+
+ 	/* PHONE FOOTER */
+ 	footer {text-align: center;}
+} 
+
+@media print {
+
+}

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>HTML5 image example</title>
+	<link rel="stylesheet" href="css/example1.css">
+</head>
+<body>
+	<main role="main">
+		<h1>HTML5 Image Example 1</h1>
+		<p>This is an example using the HTML5 <code>srcset</code> and <code>sizes</code> attributes</p>
+
+		<p>The purpose is to provide the browser with the images we have and the sizes.  Then we also tell the browser how wide the image should be displayed at any given viewport width. With this information the browser can decide which image is appropriate to use for the given size. Imagine the img tag as a container. We as developers only define how big the container should be at any given point and the browser decides which source to load to get the best output for the user.</p>
+
+		<p>100vw stands for 100% of the viewport width.  You can also do 200vw for more high res images.</p>
+
+		<p>Currently this is in draft mode so it may change as time goes by</p>
+
+		<p>To test the <code>srcset</code> and <code>sizes</code> attributes using Chrome do the following</p>
+		<ol>
+			<li>Open Chromes inspector, click the "network" tab and check the "Disable Cache" checkbox</li>
+			<li>View the page with the browser window greater than 953 pixels. You will notice the image does not fill the entire page.</li>
+			<li>Keeping the same browser size refresh the page. Under the network tab you will see the largest picture "images/ambulance-953x520.jpg" as downloaded</li>
+			<li>Move the browser window in so the page is less then 785 and refresh the page.  Under the network tab you should see the medium picture loaded "images/ambulance-785x428.jpg"</li>
+			<li>Move the browser window in so the page is less then 628 and refresh the page.  Now the picture loaded will be the smaller one "images/ambulance-628x327.jpg"</li>
+		</ol>
+
+		<p>Source code</p>
+
+<pre>
+HTML
+&lt;img srcset="images/ambulance-953x520.jpg 953w, images/ambulance-628x327.jpg 628w, images/ambulance-785x428.jpg 785w" sizes="(min-width: 953px) 953px, 100vw" alt="HART response vehicle"&gt;
+
+CSS
+#main {margin: 0 auto; max-width: 1000px;}
+img {max-width: 100%;}
+</pre>
+
+		<div>
+		    <img srcset="images/ambulance-953x520.jpg 953w, images/ambulance-628x327.jpg 628w, images/ambulance-785x428.jpg 785w"
+		         sizes="(min-width: 953px) 953px, 100vw"
+		         alt="HART response vehicle">
+		</div>
+
+		<p>Excellent <a href="http://www.smashingmagazine.com/2014/05/14/responsive-images-done-right-guide-picture-srcset/">article</a> on using srcset and sizes</p>
+
+		<p>source <a href="http://martinwolf.org/2014/05/07/the-new-srcset-and-sizes-explained/">http://martinwolf.org/2014/05/07/the-new-srcset-and-sizes-explained/</a></p>
+	</main>
+</body>
+</html>

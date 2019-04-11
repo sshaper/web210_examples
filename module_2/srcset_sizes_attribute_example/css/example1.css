@@ -1,0 +1,6 @@
+main{display: block;}
+body{font: 100%/1.5 Helvetica, sans-serif;}
+main {margin: 0 auto; max-width: 1000px;}
+img {max-width: 100%;}
+pre{white-space: pre-wrap; border: 3px solid #555; padding: 5px; background-color: #DDD; border-radius: 10px; font-family: inherit;}
+code{font-family: inherit; color: purple; font-style: italic;}

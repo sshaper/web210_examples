@@ -1,0 +1,81 @@
+/*GENERAL*/
+* {margin: 0; padding: 0;}
+body {background: #edeae3; font: 100%/1.5 sans-serif; color: #383838; text-align: center;}
+a {text-decoration: none;}
+a:hover {text-decoration: underline;}
+h3{font-size: 1.625em; margin: 0 0 10px 0;}
+
+/*GROUPED*/
+header, main, article, section, aside {display: block;}
+h3, a {color: #9f443b;}
+main, #sidebar aside, section article, #contact-form {background: #fff;margin: 0 0 30px 0;padding: 20px;border-radius: 16px;box-shadow: 0 0 4px rgba(0,0,0,.3);}
+
+/*CLASSES*/
+.flexcontainer {display: -webkit-box; display: -moz-box; display: -ms-flexbox; display: -webkit-flex; display: flex;}
+
+/*WRAPPER*/
+/*SET THE WIDTH TO 95% AND ADDED A MAX WIDTH OF 1500PX SO IT WOULD NOT STRETCH TOO MUCH THIS PAGE IS WIDER THAN THE FIXED PAGE WHICH HAS A SET WIDTH OF 1200PX*/
+#wrapper {width: 95%; max-width: 1500px; margin: 0 auto; padding: 20px 0; text-align: left;}
+
+
+/*HEADER*/
+header {margin-bottom: 30px; overflow: hidden;}
+header #headings {float: left;}
+header h1 {font-size: 2.5em; text-transform: uppercase; text-shadow: 1px 1px 0 #fff;}
+header h2 {font-size: 2em; text-shadow: 1px 1px 0 #fff; font-weight: normal;}
+header nav {float: right; margin: 24px 0 0 0;}
+header nav ul {overflow: hidden;}
+header nav ul li {list-style: none; float: left; display: inline; margin: 0; padding: 0; border-right: 1px solid #938a78; font-size: 18px; text-transform: uppercase; }
+header nav ul li:last-child {border: 0;}
+header nav ul li a {display: block; background: #c1b7a7; padding: 12px 24px; color: #fff; text-decoration: none;}
+header nav ul li a:hover {text-decoration: none; background: #9f443b; }
+
+/*BANNER*/
+#banner {padding: 20px; font-size: 1.125em; line-height: 1.4; border: 1px solid #383838; border-width: 1px 0 1px 0; margin-bottom: 30px;}
+#banner p span{color: blue;}
+
+/*MAIN*/
+/*SET THE WIDTH TO 66.667 PERCENT WHICH IS 800/1200*/
+/*BECAUSE I AM USING THE FLEXBOX I DO NOT NEED THE FLOAT*/
+main {width: 63%; margin: 0 20px 20px 0;}
+/*I SET THE WIDTH AND HEIGHT TO 48% SO THE IMAGE WOULD REDUCE IS SIZE AS THE PAGE GOT NARROWER*/
+main img {float: right; margin: 0 0 10px 10px; width: 48%; height: 48%;}
+main p {margin-bottom: 16px;}
+
+/*SIDEBAR*/
+/*CHANGE THE SIDE BAR WIDTH TO A PERCENT*/
+/*BECAUSE I AM USING THE FLEXBOX I DO NOT NEED THE FLOAT*/
+#sidebar {width: 45%;}
+#sidebar aside h4 {color: #333; font-size: 1.1em; margin-bottom: 4px;}
+#sidebar aside p {margin-bottom: 8px;}
+#sidebar aside ul li {list-style: none; margin-bottom: 6px;}
+
+/*FORM*/
+#contact-form {padding: 5px 10px}
+#contact-form form{margin: 10px 0 0 0;}
+#contact-form label, #contact-form input[type='submit'] {display: block;}
+#contact-form input[type='text'], textarea {width: 96%; margin: 0 0 10px 0; background: #EEE}
+#contact-form input[type='text'], textarea {padding: 5px; font-size: 1.1em; border-radius: 5px; border: none;}
+#contact-form textarea {height: 150px;}
+#contact-form input[type="submit"] {font-size: 1em;} /*NOTE: THIS MADE THE FONT A LITTLE BIGGER BUT IT IS NOT INCREASING IN SIZE*/
+
+/*SECTION*/
+section {}
+/*MADE THE ARTICLE WIDTH A PERCENT AND THE RIGHT MARGIN A PERCENT*/
+/*BECAUSE I AM USING THE FLEXBOX I DO NOT NEED THE FLOAT AND I COULD INCREASE THE WIDTH TO 33% FROM 27%*/
+section article {width: 33%; margin: 0 10px 25px 0;}
+section article:last-child{margin-right: 0;}
+section article h3{font-size: 1.3em}
+
+/*FOOTER*/
+footer {clear: both; border-top: 1px solid #383838; padding: 10px 20px; font-size: .875em;}
+footer nav ul {margin: 0 0 8px 0; padding: 0;}
+footer nav ul li {list-style: none; display: inline; margin-right: 12px;}
+footer #social-media {float: right;}
+footer #social-media ul li {list-style: none; float: left; margin: 0 5px 0 0;}
+footer #social-media ul li a{background: url(../images/social-media-30.png) no-repeat; display: block; height: 25px; width: 25px;border-radius: 50%;}
+footer #social-media ul li a[href*='linkedin']{background-position: -44px -40px;}
+footer #social-media ul li a[href*='google']{background-position: -179px -8px;}
+footer #social-media ul li a[href*='facebook']{background-position: -110px -8px;}
+footer #social-media ul li a[href*='twitter']{background-position: -44px -72px;}
+footer #social-media ul li a[href*='pinterest']{background-position: -78px -40px;}

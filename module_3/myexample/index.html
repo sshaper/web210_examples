@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>HTML5 Website Title</title>
+	
+<!--below is a script which allows IE 8 to understand HTML 5 elements.-->
+<!--[if lt IE 9]>
+	<script>
+		var elementsArray = ['abbr', 'article', 'aside', 'audio', 'bdi', 'canvas', 'data', 'datalist', 'details', 'figcaption', 'figure', 'footer', 'header', 'main', 'mark', 'meter', 'nav', 'output', 'progress', 'section', 'summary', 'template', 'time', 'video'];
+		var len = elementsArray.length;
+		for(i = 0; i < len; i++){
+			document.createElement(elementsArray[i]);
+		}
+	</script>
+<![endif]-->
+
+<!--CSS style sheets are here-->
+<link rel="stylesheet" href="css/main.css" />
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<h1>Heading</h1>
+		</header>
+		<nav>
+			<ul class="flexcontainer">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Page 2</a></li>
+				<li><a href="#">Page 3</a></li>
+				<li><a href="#">Page 4</a></li>
+				<li><a href="#">Page 5</a></li>
+			</ul>
+		</nav>
+		<main>
+			<div id="images" class="flexcontainer">
+				<img src="images/canyon1.jpg" alt="grand canyon pic 1" width="600" height="450">
+				<img src="images/canyon2.jpg" alt="grand canyon pic 2" width="600" height="450">
+				<img src="images/canyon3.jpg" alt="grand canyon pic 3" width="600" height="450">
+				<img src="images/canyon4.jpg" alt="grand canyon pic 4" width="600" height="450">
+				<img src="images/canyon5.jpg" alt="grand canyon pic 5" width="600" height="450">
+				<img src="images/canyon6.jpg" alt="grand canyon pic 6" width="600" height="450">
+			</div>
+
+			<section class="flexcontainer">
+				<article>
+					<header>
+						<h1>Article Header</h1>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatum corporis, sapiente praesentium temporibus expedita nam doloremque. Vel assumenda, facilis, blanditiis tenetur officiis quos minus, nostrum cupiditate esse qui repellat!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vero repudiandae eos ullam praesentium, labore alias id neque minima commodi culpa soluta sed incidunt, perferendis assumenda odio. Cum, voluptatum eveniet.</p>
+				</article>
+				<article>
+					<header>
+						<h1>Article Header</h1>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatum corporis, sapiente praesentium temporibus expedita nam doloremque. Vel assumenda, facilis, blanditiis tenetur officiis quos minus, nostrum cupiditate esse qui repellat!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vero repudiandae eos ullam praesentium, labore alias id neque minima commodi culpa soluta sed incidunt, perferendis assumenda odio. Cum, voluptatum eveniet.</p>
+				</article>
+				<article>
+					<header>
+						<h1>Article Header</h1>
+					</header>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis voluptatum corporis, sapiente praesentium temporibus expedita nam doloremque. Vel assumenda, facilis, blanditiis tenetur officiis quos minus, nostrum cupiditate esse qui repellat!</p>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga vero repudiandae eos ullam praesentium, labore alias id neque minima commodi culpa soluta sed incidunt, perferendis assumenda odio. Cum, voluptatum eveniet.</p>
+				</article>
+			</section>
+
+		</main>
+
+	</div>
+</body>
+</html>

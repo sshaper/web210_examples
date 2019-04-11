@@ -1,0 +1,61 @@
+@media screen{
+    /*general*/
+    *{margin: 0; padding: 0;}
+    body{font: 100%/1.5 sans-serif;}
+    header, nav, main, article, section{display: block;}
+
+    /*wrapper*/
+    #wrapper{width: 1024px; margin: 0 auto; border: 1px solid red;}
+
+    /*classes*/
+    .flexcontainer{
+    	display: -webkit-box; 
+    	display: -moz-box; 
+    	display: -ms-flexbox; 
+    	display: -webkit-flex; 
+    	display: flex;
+    }
+
+	/*navigation*/
+    nav{border: 1px solid #000; border-width: 1px 0; background: #eee;}
+    nav ul{list-style: none; justify-content: space-around;}
+    nav ul li, nav ul li a{width: 100%;}
+    nav ul li a{text-decoration: none; display: block; text-align: center; padding: 10px 0; color: #000;}
+    nav ul li a:hover{background: #FFF;}
+
+	/*main*/
+	main {padding: 10px;}
+	main #images{justify-content: space-between;}
+	main #images img{width: 15%; height: 15%;}
+    main section{flex-direction: row; margin: 10px 0 0 0;}
+    main article{margin: 5px;}
+    main article header{}
+    main article header h1{}
+}
+
+/*tablet landscape*/
+@media screen and (min-width: 992px) and (max-width: 1199px){
+	
+}
+
+/*tablet portrait*/
+@media screen and (min-width: 768px) and (max-width: 991px){
+	main #images img{width: 30%; height: 30%;}
+}
+
+/*tablet portrait and phone*/
+@media screen and (max-width: 991px){
+	main section{flex-direction: column;}
+	#wrapper{width: 100%;}
+	main #images{flex-wrap: wrap; justify-content: space-around;}
+	main #images img{margin: 10px 0}
+	
+}
+
+/*tablet phone*/
+@media screen and (max-width: 767px){
+	nav ul{list-style: none; justify-content: space-around;}
+	nav ul{flex-direction: column;}
+	nav ul li a{text-align: left; border-bottom: 1px solid #000; padding: 5px 10px;}
+	main #images img{width: 48%; height: 48%; margin: 5px 0;}
+}
