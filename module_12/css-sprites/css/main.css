@@ -1,0 +1,67 @@
+/*Page wide styles*/
+	body{font: normal 90%/1.3 Verdana,arial;}
+	ul, li, a {margin: 0;padding: 0}
+	ul{margin-top: 10px;list-style:none;}
+	p{margin-top: 35px;}
+	#nav3,#nav4,#nav5{float:left;}
+	#nav3 a:hover, #nav4 a:hover{background-color:#bdbdbd;}
+	#left{float:left;margin-right: 40px;}
+	#sprites{position:absolute; top: 10px;left:500px;overflow:auto; width: 500px;}
+	.clear{clear: both;}
+	
+	#nav1 li{display: inline; margin-right: 10px;}
+	#nav1 a {padding: 0 0 3px 30px;text-decoration: none; color: #000;background: url(../images/icons3.png) no-repeat;}
+	#nav1 a[href*="facebook"] {background-position: 0 -34px;}
+	#nav1 a[href*="facebook"]:hover {background-position: 0 -68px;}
+	#nav1 a[href*="google"] {background-position: 0 -133px;}
+	#nav1 a[href*="google"]:hover {background-position: 0 -164px;}
+	#nav1 a[href*="twitter"] {background-position: 0 -226px;}
+	#nav1 a[href*="twitter"]:hover {background-position: 0 -257px;}
+	
+	#nav2 li{margin-bottom: 20px;}
+	#nav2 a {padding: 0 0 3px 30px;text-decoration: none; color: #000;background: url(../images/icons3.png) no-repeat;}
+	#nav2 a[href*="facebook"] {background-position: 0 -34px;}
+	#nav2 a[href*="facebook"]:hover {background-position: 0 -68px;}
+	#nav2 a[href*="google"] {background-position: 0 -133px;}
+	#nav2 a[href*="google"]:hover {background-position: 0 -164px;}
+	#nav2 a[href*="twitter"] {background-position: 0 -226px;}
+	#nav2 a[href*="twitter"]:hover {background-position: 0 -257px;}
+	
+	#nav3 li{float: left; margin-right: 1px;}
+	#nav3 a {display: block; padding-left: 30px;text-decoration: none; color: #000;background: #F0F8FF url(../images/icons3.png) no-repeat; height: 21px; width: 90px; border: 1px solid #000;}
+	#nav3 a[href*="facebook"] {background-position: -3px -34px;}
+	#nav3 a[href*="facebook"]:hover {background-position: -3px -68px;}
+	#nav3 a[href*="google"] {background-position: -3px -133px;}
+	#nav3 a[href*="google"]:hover {background-position: -3px -164px;}
+	#nav3 a[href*="twitter"] {background-position: -3px -226px;}
+	#nav3 a[href*="twitter"]:hover {background-position: -3px -257px;}
+	
+	#nav4 li{margin-bottom: 1px;}
+	#nav4 a {display: block; padding-left: 30px;text-decoration: none; color: #000;background: #F0F8FF url(../images/icons3.png) no-repeat; height: 21px; width: 90px; border: 1px solid #000;}
+	#nav4 a[href*="facebook"] {background-position: -3px -34px;}
+	#nav4 a[href*="facebook"]:hover {background-position: -3px -68px;}
+	#nav4 a[href*="google"] {background-position: -3px -133px;}
+	#nav4 a[href*="google"]:hover {background-position: -3px -164px;}
+	#nav4 a[href*="twitter"] {background-position: -3px -226px;}
+	#nav4 a[href*="twitter"]:hover {background-position: -3px -257px;}
+	
+	
+	#nav5 li{float: left;}
+	#nav5 a{display: block; height: 45px; width: 45px;text-decoration: none; color: #000;background: url(../images/icons.png) no-repeat 0 0;}
+	#nav5 a[href*="facebook"] {background-position: -60px 0;}
+	#nav5 a[href*="facebook"]:hover {background-position: -120px 0;}
+	#nav5 a[href*="google"] {background-position: -60px -40px;}
+	#nav5 a[href*="google"]:hover {background-position: -120px -40px;}
+	#nav5 a[href*="twitter"] {background-position: -60px -80px;}
+	#nav5 a[href*="twitter"]:hover {background-position: -120px -80px;}
+	
+	
+	#nav6 a{display: block; height: 45px; width: 45px;text-decoration: none; color: #000;background: url(../images/icons.png) no-repeat 0 0;}
+	#nav6 a[href*="facebook"] {background-position: -60px 0;}
+	#nav6 a[href*="facebook"]:hover {background-position: -120px 0;}
+	#nav6 a[href*="google"] {background-position: -60px -40px;}
+	#nav6 a[href*="google"]:hover {background-position: -120px -40px;}
+	#nav6 a[href*="twitter"] {background-position: -60px -80px;}
+	#nav6 a[href*="twitter"]:hover {background-position: -120px -80px;}
+
+	

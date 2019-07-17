@@ -1,0 +1,18 @@
+body, h1, p{margin: 0; padding: 0;}
+h1, p, div {margin: 10px 0 20px 0;} 
+body{font: 100%/1.5 Verdana, sans-serif;}
+#wrapper{width: 900px; margin: 20px auto;}
+.custom-button{height: 40px; line-height: 40px; color: blue; text-align: center; width: 120px; border: 1px solid black; background: #ffffff; /* Old browsers */
+background: -moz-linear-gradient(top,  #ffffff 0%, #e5e5e5 100%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#ffffff), color-stop(100%,#e5e5e5)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #ffffff 0%,#e5e5e5 100%); /* IE10+ */
+background: linear-gradient(to bottom,  #ffffff 0%,#e5e5e5 100%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+}
+
+.box{border: 1px solid black; padding: 10px; width: 200px;}
+.stars{background: url(../images/rating-star.gif) no-repeat 0 0; width: 200px; height: 35px; padding: 15px 0 0 220px}
+.dialogbox{border: 1px solid #000; border-radius: 10px; padding: 10px; width: 200px; box-shadow: 10px 10px 5px #888888;}
+kbd{background: #000; padding: 1px 3px; font-family: inherit; font-size: inherit; color: #FFF; border-radius: 6px;}

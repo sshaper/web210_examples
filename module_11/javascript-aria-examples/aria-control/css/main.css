@@ -1,0 +1,19 @@
+body, h1, h2, p, ul, li{margin: 0; padding: 0}
+body{font: 100%/1.5 Verdana, sans-serif;}
+h2{margin: 0 0 5px 0;}
+
+/*custom classes*/
+.hideBorder{border: none;}
+.tabs .hideDiv{display: none;}
+.clear{clear: both;}
+#panels{border: none;}
+kbd{background: #000; padding: 1px 3px; font-family: inherit; font-size: inherit; color: #FFF; border-radius: 6px;}
+
+
+.tabs{width: 800px; margin: 0 auto; position: relative; margin-top: 60px;}
+.tabs ul{list-style-type: none; position: absolute; top: -35px; left: 5px}
+.tabs ul li{float: left; border: 1px solid #000; border-radius: 5px 5px 0 0; border-bottom: 1px solid #000; margin-left: 5px; padding: 10px; background: #FFF;}
+.tabs ul li a{text-decoration: none; color: #000; display: block; width: 100%;}
+.tabs div:not(.clear){padding: 10px; border: 1px solid #000;}
+.tabs ul li.whiteBorder{border-bottom: 1px solid #FFF;}
+

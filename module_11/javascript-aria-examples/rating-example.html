@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Rating Example</title>
+	<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+	<div id="wrapper">
+		<h1>Star Rating Example</h1>
+		<p>This example uses the following aria attributes:</p>
+		<ul>
+			<li>role="slider" - Sets the role to slider</li>
+			<li>aria-valuemin - The minimum value of the slider</li>
+			<li>aria-valuemax - The maximum value of the slider</li>
+			<li>aria-valuenow - The current value of the slider</li>
+			<li>aria-valuetext - Used to define the human readable text alternative of aria-valuenow for a range widget such as progressbar, spinbutton or slider.</li>
+		</ul>
+		<p>This example uses both the aria-valuenow and the aria-valuetext attributes just to show them.  Aria-valuetext is the alternative to aria-valuenow.</p>
+		<p>Tab to highlight the rating stars then use the up and down arrow keys to increase and decrease the stars.  This is a keyboard only application the mouse will not work.</p>
+		<div id="stars" class="stars" tabindex="0" role="slider" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0" aria-valuetext=
+		"0 stars">0 stars</div>
+		<p>If you move to this text and then back the screen reader will remember the last rating (basically just reads the updated aria-valuetext attribute.</p>
+		
+		
+	</div>
+	<script src="js/rating-example.js"></script></script>
+</body>
+</html>
